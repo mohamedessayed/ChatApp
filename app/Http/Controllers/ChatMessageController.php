@@ -35,7 +35,7 @@ class ChatMessageController extends Controller
         try {
             //code...
 
-            $user_id = Auth::guard('api')->id();
+            $user_id = Auth::guard('api')->id() ?? '1';
 
             $message = ChatMessage::create([
                 'message'=>$request->message,

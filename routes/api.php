@@ -12,10 +12,10 @@ Route::middleware('throttle:60,1')->group(function () {
         Route::post('signup', [AuthController::class, 'signup']);
     });
 
-    Route::middleware('auth:api')->group(function () {
+    // Route::middleware('auth:api')->group(function () {
         Route::prefix('message')->group(function () {
             Route::get('all', [ChatMessageController::class, 'all']);
             Route::post('send', [ChatMessageController::class, 'send']);
         });
-    });
+    // });
 });
