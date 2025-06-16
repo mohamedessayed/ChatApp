@@ -1,0 +1,39 @@
+.chatBox {
+  height: 400px;
+  width: 70%;
+  margin: auto;
+  border: 1px solid #333;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow-y: scroll;
+}
+.chatBox .recive {
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+  background-color: #d3d1d1;
+  border-radius: 20px;
+  border-bottom-left-radius: 0px;
+}
+.chatBox .sent {
+  width: 50%;
+  padding: 10px;
+  margin: 10px 10px 10px auto;
+  color: #fff;
+  background-color: #323232;
+  border-radius: 20px;
+  border-bottom-right-radius: 0px;
+}
+
+.sendMessage {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  gap: 10px;
+}
+.sendMessage textarea {
+  width: 100%;
+}
+.sendMessage .block {
+  display: block;
+}/*# sourceMappingURL=chatStyle.css.map */

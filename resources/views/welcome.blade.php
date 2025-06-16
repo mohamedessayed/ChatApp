@@ -1,27 +1,16 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Pusher Test</title>
-  <script src="https://js.pusher.com/8.4.0/pusher.min.js"></script>
-  <script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 
-    // Enable pusher logging - don't include this in production
-    Pusher.logToConsole = true;
+  @viteReactRefresh
+  @vite('resources/js/app.js')
 
-    var pusher = new Pusher('8ef8d85ed75185b84528', {
-      cluster: 'eu'
-    });
-
-    var channel = pusher.subscribe('appchat-growth');
-    channel.bind('ChatMessageEvent', function(data) {
-      console.log(data);
-      
-    });
-  </script>
 </head>
 <body>
-  <h1>Pusher Test</h1>
-  <p>
-    Try publishing an event to channel <code>my-channel</code>
-    with event name <code>my-event</code>.
-  </p>
+  <div id="root"></div>
 </body>
+</html>
